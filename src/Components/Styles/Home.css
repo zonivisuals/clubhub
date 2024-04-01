@@ -1,0 +1,63 @@
+/* Global styles */
+.home{
+    display: flex;
+    flex-direction: column;
+}
+
+.home-section{
+    margin-top: 38px;
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#left-home{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 80px;
+    margin-right: 220px;
+    gap: 24px;
+}
+
+
+#right-home{
+    margin-right: 80px;
+    margin-left: 0px;
+}
+
+#btns-home button{
+    font-weight: 700;
+    font-size: 22px;
+    padding: 18px 68px;
+    border: none;
+    border-radius: 8px;
+}
+
+#btns-home{
+    display: flex;
+    gap: 24px;
+}
+
+#btns-home #prim-btn{
+    margin-right: auto;
+    background-color: white;
+    color: #904DE1;
+}
+
+#btns-home #second-btn{
+    margin-left: auto;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+#desc-home h1{
+    margin: 0;
+}
+
+#desc-home p{
+    line-height: 24px;
+}

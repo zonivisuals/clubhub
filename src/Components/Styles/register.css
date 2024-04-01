@@ -1,0 +1,67 @@
+.register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    color: white;
+    background-color: transparent;
+    
+    background: rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(11.2px);
+    -webkit-backdrop-filter: blur(11.2px);
+
+    height: 600px;
+    width: 500px;
+    
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#register-inputs #user-names-id{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+#register-inputs #user-names-id input{
+    padding: 20px 16px;
+}
+
+
+#register-inputs input[type="text"], input[type="password"], input[type="email"], input[type="tel"]{
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 20px;
+}
+
+#register-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#register-additional-options{
+    margin-top: 24px;
+
+}
+
+
+#register-btn{
+    padding: 12px 156px; /* Adjusted padding */
+    border: none;
+    border-radius: 50px;
+    color: #904de1;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+

@@ -1,0 +1,95 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    background-color: transparent;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(11.2px);
+    -webkit-backdrop-filter: blur(11.2px);
+    width: 470px;
+    height: 500px;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#login-inputs input[type="text"],
+#login-username input[type="text"],
+#login-password input[type="password"] {
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 16px 52px;
+    text-align: start;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.87);
+}
+
+#login-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#login-username,
+#login-password {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+i {
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 16px;
+}
+
+#additional-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#login-remind-me-input {
+    border: 2px solid white;
+    background-color: transparent;
+    padding: 16px; /* Adjusted padding */
+}
+
+#login-forget-password {
+    text-decoration: none;
+    color: white;
+}
+
+#login-btn {
+    padding: 12px 134px; /* Adjusted padding */
+    border: none;
+    border-radius: 50px;
+    color: #904de1;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#additional-login-links{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#additional-signup-text{
+    margin: 0;
+}
+

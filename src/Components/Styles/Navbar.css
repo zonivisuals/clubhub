@@ -1,0 +1,119 @@
+/* Navbar styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.47);
+    background: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+}
+
+.navbar #mid-nav a,
+.navbar #right-nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+#mid-nav button{
+    color: white;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    font-weight: 600;
+    font-size:16px ;
+}
+
+
+/* Mid nav styles */
+#mid-nav {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#mid-nav a {
+    padding: 24px;
+    position: relative;
+}
+
+
+
+/* Underline for active button */
+#mid-nav a.active::after {
+    border-radius: 100px;
+    content: '';
+    position: absolute;
+    bottom: 16px; /* Adjust based on your design */
+    width: 50px;
+    height: 2px; /* Thickness of the underline */
+    background-color: white;
+}
+
+/* Line animation on hover */
+#mid-nav a::before {
+    border-radius: 100px;
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 16px; /* Adjust based on your design */
+    margin: 0 auto; /* Center the line */
+    width: 0;
+    height: 3px; /* Thickness of the line */
+    background-color: transparent;
+    transition: width 0.2s ease-in-out; /* Transition the width property */
+}
+
+#mid-nav a:hover::before {
+    width: 100%; /* Change to your desired hover color */
+    background-color: white;
+}
+
+
+/* Right nav styles */
+#right-nav {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-right: 80px;
+}
+
+#right-nav #register {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 16px 20px;
+    border-radius: 8px;
+}
+
+#right-nav #login {
+    color: #904DE1;
+    background-color: rgba(255, 255, 255);
+    padding: 16px 20px;
+    border-radius: 8px;
+}
+
+
+
+/* Left nav styles */
+#left-nav {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 80px;
+}
+
+#left-nav link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#left-nav img {
+    width: 112px;
+    border-radius: 8px;
+}
