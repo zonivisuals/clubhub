@@ -1,5 +1,6 @@
 import React from 'react'
 import './Styles/register.css'
+import { Link } from 'react-router-dom'
 
 const register = ()=>{
     return(
@@ -19,8 +20,13 @@ const register = ()=>{
                         <input type='checkbox'/>
                         <label>I agree to terms and privacy policy</label>
                     </div>
+                    
                 </div>
                 <a><button id='register-btn'>Register</button></a>
+                <div id='additional-login-links'>
+                    <p id='additional-signup-text'>already have an account ?</p>
+                    <Link to='/login'><p><strong>Sign in Now</strong></p></Link>
+                </div>
         </form>
     )
 }
