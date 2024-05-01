@@ -1,28 +1,45 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Styles/register.css'
 import { Link } from 'react-router-dom'
 
-const register = ()=>{
+const Register = ()=>{
+
+    const [values, setValues] = useState({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phoneNumber:'',
+        password: ''
+    })
+
+    const handleInput = (event) => {
+        setValues(prev => ({ ...prev, [event.target.name]: event.target.value }));
+    };
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+    };
+
+
     return(
-        <form className='register' action='actions.php'>
+        <form className='register' action='' onSubmit={handleSubmit}>
 
                 <h1>Register</h1>
                 <div id='register-inputs'>
                     <div id='user-names-id'>
-                        <input id='first-name-input' placeholder='First Name' type='text' required/>
-                        <input id='last-name-input' placeholder='Last Name' type='text' />
+                        <input name='firstName' onChange={handleInput} id='first-name-input' placeholder='First Name' type='text' required/>
+                        <input name='lastName' onChange={handleInput} id='last-name-input' placeholder='Last Name' type='text' />
                     </div>
-                    <input id='user-email' placeholder='Email' type='email' required/>
-                    <input id='user-password' placeholder='Password' type='password' required/>
-                    <input id='user-confirm-password' placeholder='Confirm Password' type='password' required/>
-                    <input id='user-phone-number' placeholder='Phone Number' type='tel' required/>
+                    <input name='email' onChange={handleInput} id='user-email' placeholder='Email' type='email' required/>
+                    <input name='password' onChange={handleInput} id='user-password' placeholder='Password' type='password' required/>
+                    <input name='phoneNumber' onChange={handleInput} id='user-phone-number' placeholder='Phone Number' type='tel' required/>
                     <div id='register-additional-options'>
                         <input type='checkbox'/>
                         <label>I agree to terms and privacy policy</label>
                     </div>
                     
                 </div>
-                <a><button id='register-btn'>Register</button></a>
+                <a><button type='submit' id='register-btn'>Register</button></a>
                 <div id='additional-login-links'>
                     <p id='additional-signup-text'>already have an account ?</p>
                     <Link to='/login'><p><strong>Sign in Now</strong></p></Link>
@@ -31,4 +48,4 @@ const register = ()=>{
     )
 }
 
-export default register
+export default Register
